@@ -12,34 +12,34 @@ function gameOn(myHand) {
     if (myHand === "Rock" && computerHand) {
         var computerScoreUpdate = parseInt(computerScore.textContent) + 1;
         document.getElementById('computerScore').innerHTML = computerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="pbr.png"> (Paper beats Rock, win for Computer)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/pbr.png"> (Paper beats Rock, win for Computer)'
     }
     else if (myHand === "Paper" && computerHand === "Scissors") {
         var computerScoreUpdate = parseInt(computerScore.textContent) + 1;
         document.getElementById('computerScore').innerHTML = computerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="sbp.png"> (Scissors beats Paper, win for Computer)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/sbp.png"> (Scissors beats Paper, win for Computer)'
     }
     else if (myHand === "Scissors" && computerHand === "Rock") {
         var computerScoreUpdate = parseInt(computerScore.textContent) + 1;
         document.getElementById('computerScore').innerHTML = computerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="rbs.png"> (Rock beats Scissors, win for Computer)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/rbs.png"> (Rock beats Scissors, win for Computer)'
     }
 
     // Options for player to win
     else if (myHand === "Paper" && computerHand === "Rock") {
         var playerScoreUpdate = parseInt(playerScore.textContent) + 1;
         document.getElementById('playerScore').innerHTML = playerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="pbr.png"> (Paper beats Rock, win for Player)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/pbr.png"> (Paper beats Rock, win for Player)'
     }
     else if (myHand === "Rock" && computerHand === "Scissors") {
         var playerScoreUpdate = parseInt(playerScore.textContent) + 1;
         document.getElementById('playerScore').innerHTML = playerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="rbs.png"> (Rock beats Scissors, win for Player)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/rbs.png"> (Rock beats Scissors, win for Player)'
     }
     else if (myHand == "Scissors" && computerHand === "Paper") {
         var playerScoreUpdate = parseInt(playerScore.textContent) + 1;
         document.getElementById('playerScore').innerHTML = playerScoreUpdate;
-        document.getElementById('gameon').innerHTML = '<img src="sbp.png"> (Scissors beats Paper, win for Player)'
+        document.getElementById('gameon').innerHTML = '<img src="../img/sbp.png"> (Scissors beats Paper, win for Player)'
     }
 
     // If it's a tie
